@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-soft text-slate antialiased;
+}
+
+main {
+  @apply min-h-screen;
+}
+
+a {
+  @apply text-accent transition-colors;
+}
+
+a:hover {
+  @apply text-amber-500;
+}
+
+.prose h2 {
+  @apply text-3xl font-semibold text-ink;
+}
+
+.prose h3 {
+  @apply text-2xl font-semibold text-ink;
+}
+
+.prose p {
+  @apply leading-relaxed;
+}
